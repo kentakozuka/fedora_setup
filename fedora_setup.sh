@@ -9,6 +9,9 @@ dnf update -y
 dnf install -y \
 	gimp \
 	git \
+	inkscape \
+	openssh \
+	rsync \
 
 #------------------------------------#
 # docker
@@ -43,6 +46,29 @@ cd vim/src
    --enable-fail-if-missing
 make
 sudo make install
+
+
+#------------------------------------#
+# python
+#------------------------------------#
+sudo pip3 install \
+	pystan \
+	numpy \
+	scipy \
+	matplotlib \
+	ipython \
+	jupyter \
+	scikit-learn \
+	pandas \
+	pillow \
+	beautiful-soup \
+	html5lib \
+	seaborn
+
+# jupyter vimバインディング
+pip3 install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+mkdir -p $(jupyter --data-dir)/nbextensions
 
 # 管理者を出る
 exit
