@@ -43,6 +43,7 @@ sudo dnf install -y \
 	w3m \
 	haskell-platform \
 	zsh \
+	xsel \ 			#クリップボードに標準出力をコピーする
 
 # python
 sudo dnf install -y \
@@ -172,7 +173,6 @@ sudo pip3 install \
 	html5lib \
 	seaborn \
 	scrapy \
-	xsel \ 			#クリップボードに標準出力をコピーする
 
 # jupyter vimバインディング
 sudo pip3 install jupyter_contrib_nbextensions
